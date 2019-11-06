@@ -24,7 +24,7 @@ func mongodbDefaultURI() string {
 }
 
 var (
-	listenAddressFlag = flag.String("web.listen-address", ":9001", "Address on which to expose metrics and web interface.")
+	listenAddressFlag = flag.String("web.listen-address", "0.0.0.0:9001", "Address on which to expose metrics and web interface.")
 	metricsPathFlag   = flag.String("web.metrics-path", "/metrics", "Path under which to expose metrics.")
 	webTLSCert        = flag.String("web.tls-cert", "", "Path to PEM file that conains the certificate (and optionally also the private key in PEM format).\n"+
 		"    \tThis should include the whole certificate chain.\n"+
